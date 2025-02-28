@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nyan Cat Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .carousel-item img {
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item.active img {
+            transform: scale(1.1);
+        }
+    </style>
+    <style>
+        /* Définir une police globale cohérente */
+        body {
+            font-family: 'Inter', sans-serif; /* Remplace par ta police préférée */
+        }
+    
+        /* Uniformiser la taille et le style des textes */
+        h2, h3 {
+            font-weight: 700;
+            font-family: inherit; /* Assurer la cohérence */
+        }
+    
+        p, .lead {
+            font-size: 1rem; /* Uniformiser les paragraphes */
+            font-family: inherit;
+        }
+    
+        /* Ajuster le style du contrat */
+        .contract-box {
+            background-color: #f8f9fa; /* Même couleur que bg-light */
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    
+        /* Uniformiser les boutons */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-size: 1rem; /* S’assurer que les boutons ont la même taille */
+        }
+    
+        .btn-outline-primary {
+            border: 2px solid #007bff;
+            color: #007bff;
+            font-size: 1rem;
+        }
+    </style>
+    
+</head>
+<body class="bg-primary text-white">
+    
+    <!-- Top Section with Navigation -->
+<!-- Section avec responsive -->
+<div class="container bg-white text-dark py-3 rounded shadow-lg mb-5 mt-3 d-flex flex-column flex-md-row align-items-center justify-content-between text-center text-md-start">
+    <!-- GIF + Titre -->
+    <div class="d-flex align-items-center">
+        <img src="https://nyancatcollection.com/images/MiniNyan.gif" alt="logo" class="me-3" style="height: 50px;">
+        <h2 class="fw-bold">Nyan Cat flies forever!</h2>
+    </div>
+
+    <!-- Boutons (passe en dessous sur mobile) -->
+    <div class="d-flex flex-wrap justify-content-center mt-3 mt-md-0">
+        <button class="btn btn-primary m-2" onclick="scrollToSection('whats-this')">What's This?</button>
+        <button class="btn btn-primary m-2" onclick="scrollToSection('nyan-army')">Nyan Army</button>
+        <button class="btn btn-primary m-2" onclick="scrollToSection('nyan-token')">$NYAN Token</button>
+
+        <a href="#" class="btn btn-outline-dark m-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20">
+                <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a href="#" class="btn btn-outline-dark m-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="20" height="20">
+                <path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+        <!-- What's This Section 1 -->
+        <section class="container bg-white text-dark rounded shadow-lg py-4 mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 p-4">
+                    <h2 class="fw-bold">Nyan Cat flies forever!</h2>
+                    <p>
+                        
+    Welcome back to the world of Nyan Cat! Building a rainbow army on Solana isn’t easy! Hmm… what were we saying again? Scroll down and start start building the Nyan Cat army!
+                    </p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-primary" onclick="scrollToSection('whats-this')">What's This?</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="nyanCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://nyancatcollection.com/images/Pumpkin.gif" class="d-block w-100 rounded" alt="Nyan Cat Variant">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://nyancatcollection.com/images/Pirate.gif" class="d-block w-100 rounded" alt="Nyan Cat Variant">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://nyancatcollection.com/images/Biker.gif" class="d-block w-100 rounded" alt="Nyan Cat Variant">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://nyancatcollection.com/images/Golden.gif" class="d-block w-100 rounded" alt="Nyan Cat Variant">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- What's This Section 2 -->
+        <section id="whats-this" class="container bg-white text-dark rounded shadow-lg py-4 mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center">
+                    <img src="https://i.postimg.cc/CxKQp9B5/WHATSTHISpic.png" class="w-75 rounded" alt="Nyan Cat Variant">
+                </div>
+                <div class="col-md-6 p-4">
+                    <h2 class="fw-bold">What's this?</h2>
+                    <p>
+                        Creating a Nyan Army in the digital universe is easier than you think! The Nyan Army token is built around the concept of forming a cosmic fleet of pixelated rainbow warriors. If you hold at least $50 worth of NYAN tokens, you will have the power to bring a Nyan to life!
+                    </p>
+                    <p>
+                        Find an unlaunched Nyan and follow the steps to launch it into the universe. If you succeed, your token will be linked to your Nyan, and it will be displayed here, forever flying through the infinite space!
+                    </p>
+                    <div class="mt-4">
+                        <a class="btn btn-primary me-2" onclick="scrollToSection('nyan-army')">Visit Nyan Army</a>
+                        <a class="btn btn-success" onclick="scrollToSection('nyan-token')">Buy $NYAN Token</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container bg-white text-dark rounded shadow-lg py-4 mb-5">
+            <div class="row g-4 text-center">
+                <div class="col-lg-4">
+                    <div class="feature">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3">
+                            <img src="https://i.postimg.cc/15kLV9jV/nyancat-original.png" height="78px" class="rounded-4 border-sm-nyan">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">NYAN Token</h3>
+                        <p>Prove your love for Nyan Cat by purchasing $50 worth of NYAN tokens.</p>
+                        <a href="#nyantoken" class="icon-link nyan-color cartzoo">
+                            Buy $NYAN Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3">
+                            <img src="https://i.postimg.cc/j20fBxQN/NYANDEAD.png" height="78px" class="rounded-4 border-sm-nyan">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">Find a Nyan!</h3>
+                        <p>Locate an unlaunched Nyan! The fastest one claims the Nyan.</p>
+                        <a href="#nyanarmy" class="icon-link nyan-color cartzoo">
+                            Check the Nyan Army!
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3">
+                            <img src="https://i.postimg.cc/WbxBKxQV/NYANMEX.png" height="78px" class="rounded-4 border-sm-nyan">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">Deploy Your Nyan!</h3>
+                        <p>Launch your Nyan into the cosmic space with the right name, symbol, and info!</p>
+                        <a href="https://pump.fun/create" target="_blank" class="icon-link cartzoo nyan-color">
+                            Launch Now!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+            <!-- NYAN Token Section -->
+
+    <section id="nyan-token" class="container bg-white text-dark rounded shadow-lg py-4 mb-5" id="nyantoken">
+        <div class="row align-items-center">
+            <!-- Colonne Texte -->
+            <div class="col-lg-7 p-1 p-lg-5 pt-lg-3 text-center text-lg-start">
+                <h2 class="fw-bold display-4 text-body-emphasis">
+                    <img src="https://i.postimg.cc/15kLV9jV/nyancat-original.png" height="72px" class="border-sm-nyan rounded-3 me-2">
+                    $NYAN Token
+                </h2>
+                <p class="lead">
+                    Nyan Cat is more than a meme; it's an intergalactic phenomenon, flying through an endless expanse of joy, color, and nostalgia!
+                </p>
+                
+                <!-- Mise en avant du contract address -->
+                <div class="bg-light p-3 rounded text-center">
+                    <p class="fw-bold">$NYAN Token Contract:</p>
+                    <p class="text-primary fs-5">Available soon!</p>
+                </div>
+                <p class="lead">
+                    You can purchase $NYAN tokens using Raydium DEX. Please ensure you are buying the official $NYAN token to avoid any counterfeits.
+                </p>
+    
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                    <a href="" 
+                       target="_blank" 
+                       class="btn btn-primary btn-lg rounded-3 px-4 fw-bold">
+                       Buy on Raydium
+                    </a>
+                    <a href="" 
+                       target="_blank" 
+                       class="btn btn-outline-primary btn-lg rounded-3 px-4 fw-bold">
+                       Dexscreener
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Colonne Image -->
+            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                <img src="https://i.postimg.cc/JhxbFDpk/RAYDIUMNYAN.png" 
+                     class="w-75 rounded-5 border-sm-nyan">
+            </div>
+        </div>
+    </section>
+        
+    
+    <!-- Nyan Army Section -->
+<section id="nyan-army" class="container bg-white text-dark rounded shadow-lg py-4 mb-5 text-center">
+    <h2 class="fw-bold">Nyan Army</h2>
+    
+    <!-- Texte au-dessus des images -->
+    <p class="lead mt-3">
+        Welcome to the Nyan Army! Each Nyan here is either waiting to be launched or has already been sent into the cosmic blockchain! 
+        Remember, each Nyan can only be linked to one person!
+
+        Please find instructions at the end of this section!
+    </p>
+
+    <div class="row mt-4">
+        <!-- Nyan 1 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="https://nyancatcollection.com/images/Pumpkin.gif" class="card-img-top rounded" alt="Pumpkin Nyan">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Pumpkin Nyan</h5>
+                    <p class="card-text">MCAP: <span class="fw-bold">500K</span></p>
+                    <p class="card-text">Symbol: <span class="fw-bold">$NYANPK</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nyan 2 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="https://nyancatcollection.com/images/Pirate.gif" class="card-img-top rounded" alt="Pirate Nyan">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Pirate Nyan</h5>
+                    <p class="card-text">MCAP: <span class="fw-bold">1M</span></p>
+                    <p class="card-text">Symbol: <span class="fw-bold">$NYANPR</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nyan 3 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="https://nyancatcollection.com/images/Biker.gif" class="card-img-top rounded" alt="Biker Nyan">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Biker Nyan</h5>
+                    <p class="card-text">MCAP: <span class="fw-bold">5M</span></p>
+                    <p class="card-text">Symbol: <span class="fw-bold">$NYANBK</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nyan 4 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="https://nyancatcollection.com/images/Golden.gif" class="card-img-top rounded" alt="Golden Nyan">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Golden Nyan</h5>
+                    <p class="card-text">MCAP: <span class="fw-bold">10M</span></p>
+                    <p class="card-text">Symbol: <span class="fw-bold">$NYANGLD</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Texte en dessous des images -->
+    <p class="text-muted mt-4 px-3">
+        The Nyan tokens listed here have been created by community members. If you see a waiting Nyan, visit it!  
+        By using the information posted here, you can launch that Nyan on the pump.fun platform.  
+        The first person to launch the token correctly will have their token automatically linked to the Nyan here and published on our socials.  
+        
+        The Name, Symbol and Image must be exactly as specified here. You can't launch a NYAN token before $NYAN reached the MCAP specified.  
+        Additionally, your deploying wallet must hold $50 worth of $NYAN tokens.  
+
+        The Nyan tokens listed here have no affiliation with the Nyan Army team or the $NYAN token.  
+        Please be cautious and do your own research before investing.  
+
+        New NYAN may appear in the future so make sure to stay updated!
+    </p>
+</section>
+
+
+<script>
+    function scrollToSection(sectionId) {
+        let target = document.getElementById(sectionId);
+        if (target) {
+            let headerOffset = 80; // Ajuste cette valeur en fonction de ta barre de navigation
+            let elementPosition = target.getBoundingClientRect().top + window.scrollY;
+            let offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    }
+</script>
+
+
+    
+    
+</body>
+</html>
